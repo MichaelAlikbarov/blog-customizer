@@ -44,7 +44,6 @@ export const ArticleParamsForm = ({
 
 	const handleChange = (key: keyof ArticleStateType, value: OptionType) => {
 		setStateSelectArticle({ ...stateSelectArticle, [key]: value });
-		console.log(value);
 	};
 	useOutsideClickClose({
 		isOpen: stateArrowButton,
