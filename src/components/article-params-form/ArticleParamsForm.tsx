@@ -14,6 +14,7 @@ import {
 	fontSizeOptions,
 	ArticleStateType,
 	OptionType,
+	defaultArticleState,
 } from 'src/constants/articleProps';
 import { RadioGroup } from 'src/ui/radio-group';
 import { Separator } from 'src/ui/separator';
@@ -107,7 +108,7 @@ export const ArticleParamsForm = ({
 							title='Сбросить'
 							htmlType='reset'
 							type='clear'
-							onClick={() => setStateSelectArticle(stateArticle)}
+							onClick={() => setStateSelectArticle(defaultArticleState)}
 						/>
 						<Button title='Применить' htmlType='submit' type='apply' />
 					</div>

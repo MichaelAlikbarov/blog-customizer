@@ -20,6 +20,7 @@ export const useOutsideClickClose = ({
 				isOpen && onClose?.();
 				onChange?.(false);
 			}
+			if (!isOpen) return;
 		};
 
 		window.addEventListener('mousedown', handleClick);
