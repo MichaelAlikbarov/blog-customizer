@@ -7,15 +7,14 @@ import {
 } from '../../constants/articleProps';
 
 import '../../styles/index.scss';
-import styles from '../../styles/index.module.scss';
-import clsx from 'clsx';
+import styles from './App.module.scss';
 
 export const App = () => {
 	const [stateArticle, setStateArticle] =
 		useState<ArticleStateType>(defaultArticleState);
 	return (
 		<main
-			className={clsx(styles.main)}
+			className={styles.main}
 			style={
 				{
 					'--font-family': stateArticle.fontFamilyOption.value,
