@@ -79,8 +79,8 @@ export const ArticleParamsForm = ({
 					/>
 					<RadioGroup
 						name='fontSizeOptions'
-						options={fontSizeOptions}
 						selected={stateSelectArticle.fontSizeOption}
+						options={fontSizeOptions}
 						onChange={(option) => handleChange('fontSizeOption', option)}
 						title={'рАЗМЕР шрифта'}
 					/>

@@ -8,13 +8,14 @@ import {
 
 import '../../styles/index.scss';
 import styles from '../../styles/index.module.scss';
+import clsx from 'clsx';
 
 export const App = () => {
 	const [stateArticle, setStateArticle] =
 		useState<ArticleStateType>(defaultArticleState);
 	return (
 		<main
-			className={styles.main}
+			className={clsx(styles.main)}
 			style={
 				{
 					'--font-family': stateArticle.fontFamilyOption.value,
